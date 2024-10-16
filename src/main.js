@@ -1,11 +1,16 @@
-// ROOT JS FILE
-// there's all the basic logic of the site
-
-(() => {
-    // write all the logic here in IIFE functions to close access to changing variables and functions inside the site.
-    // @see https://developer.mozilla.org/en-US/docs/Glossary/IIFE
-
-    console.log('START')
 
 
+(async() => {
+    const section = document.getElementById('movies-list')
+
+    const respons = await fetch('src/backend/database.json')
+    const database = await respons.json();
+
+    const list = database.map((item) => `
+        <li class="liast item">
+            <p>${item.title}</p>
+        </li>
+`)
+
+    section.innerHTML = list
 })()

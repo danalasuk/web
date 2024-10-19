@@ -27,3 +27,7 @@ body {
     background-color: rgb(68, 85, 101);
     padding: 12px;
 }
+
+.ul {
+   display: flex;
+}

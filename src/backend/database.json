@@ -1,107 +1,114 @@
 [
-    {
-      "title": "Inception",
-      "year": 2010,
-      "genre": ["Sci-Fi", "Thriller"],
-      "director": "Christopher Nolan",
-      "cast": [
-        "Leonardo DiCaprio",
-        "Joseph Gordon-Levitt",
-        "Elliot Page",
-        "Tom Hardy"
-      ],
-      "rating": 8.8
-    },
-    {
-      "title": "The Matrix",
-      "year": 1999,
-      "genre": ["Action", "Sci-Fi"],
-      "director": "Lana Wachowski, Lilly Wachowski",
-      "cast": [
-        "Keanu Reeves",
-        "Laurence Fishburne",
-        "Carrie-Anne Moss",
-        "Hugo Weaving"
-      ],
-      "rating": 8.7
-    },
-    {
-      "title": "The Godfather",
-      "year": 1972,
-      "genre": ["Crime", "Drama"],
-      "director": "Francis Ford Coppola",
-      "cast": [
-        "Marlon Brando",
-        "Al Pacino",
-        "James Caan",
-        "Robert Duvall"
-      ],
-      "rating": 9.2
-    },
-    {
-      "title": "Pulp Fiction",
-      "year": 1994,
-      "genre": ["Crime", "Drama"],
-      "director": "Quentin Tarantino",
-      "cast": [
-        "John Travolta",
-        "Uma Thurman",
-        "Samuel L. Jackson",
-        "Bruce Willis"
-      ],
-      "rating": 8.9
-    },
-    {
-      "title": "Interstellar",
-      "year": 2014,
-      "genre": ["Adventure", "Drama", "Sci-Fi"],
-      "director": "Christopher Nolan",
-      "cast": [
-        "Matthew McConaughey",
-        "Anne Hathaway",
-        "Jessica Chastain",
-        "Michael Caine"
-      ],
-      "rating": 8.6
-    },
-    {
-      "title": "Fight Club",
-      "year": 1999,
-      "genre": ["Drama"],
-      "director": "David Fincher",
-      "cast": [
-        "Brad Pitt",
-        "Edward Norton",
-        "Helena Bonham Carter",
-        "Meat Loaf"
-      ],
-      "rating": 8.8
-    },
-    {
-      "title": "The Dark Knight",
-      "year": 2008,
-      "genre": ["Action", "Crime", "Drama"],
-      "director": "Christopher Nolan",
-      "cast": [
-        "Christian Bale",
-        "Heath Ledger",
-        "Aaron Eckhart",
-        "Michael Caine"
-      ],
-      "rating": 9.0
-    },
-    {
-      "title": "Schindler's List",
-      "year": 1993,
-      "genre": ["Biography", "Drama", "History"],
-      "director": "Steven Spielberg",
-      "cast": [
-        "Liam Neeson",
-        "Ralph Fiennes",
-        "Ben Kingsley",
-        "Caroline Goodall"
-      ],
-      "rating": 9.0
-    }
-  ]
-  
+  {
+    "title": "Inception",
+    "year": 2010,
+    "genre": ["Sci-Fi", "Thriller"],
+    "director": "Christopher Nolan",
+    "cast": [
+      "Leonardo DiCaprio",
+      "Joseph Gordon-Levitt",
+      "Elliot Page",
+      "Tom Hardy"
+    ],
+    "rating": 8.8,
+    "image": "https://m.media-amazon.com/images/I/51v5ZpFyaFL._AC_SY679_.jpg"
+  },
+  {
+    "title": "The Matrix",
+    "year": 1999,
+    "genre": ["Action", "Sci-Fi"],
+    "director": "Lana Wachowski, Lilly Wachowski",
+    "cast": [
+      "Keanu Reeves",
+      "Laurence Fishburne",
+      "Carrie-Anne Moss",
+      "Hugo Weaving"
+    ],
+    "rating": 8.7,
+    "image": "https://m.media-amazon.com/images/I/51EG732BV3L._AC_.jpg"
+  },
+  {
+    "title": "The Godfather",
+    "year": 1972,
+    "genre": ["Crime", "Drama"],
+    "director": "Francis Ford Coppola",
+    "cast": [
+      "Marlon Brando",
+      "Al Pacino",
+      "James Caan",
+      "Robert Duvall"
+    ],
+    "rating": 9.2,
+    "image": "https://m.media-amazon.com/images/I/41--+bIuQHL._AC_.jpg"
+  },
+  {
+    "title": "Pulp Fiction",
+    "year": 1994,
+    "genre": ["Crime", "Drama"],
+    "director": "Quentin Tarantino",
+    "cast": [
+      "John Travolta",
+      "Uma Thurman",
+      "Samuel L. Jackson",
+      "Bruce Willis"
+    ],
+    "rating": 8.9,
+    "image": "https://m.media-amazon.com/images/I/71c05lTE03L._AC_SY679_.jpg"
+  },
+  {
+    "title": "Interstellar",
+    "year": 2014,
+    "genre": ["Adventure", "Drama", "Sci-Fi"],
+    "director": "Christopher Nolan",
+    "cast": [
+      "Matthew McConaughey",
+      "Anne Hathaway",
+      "Jessica Chastain",
+      "Michael Caine"
+    ],
+    "rating": 8.6,
+    "image": "https://m.media-amazon.com/images/I/91kFYg4fX3L._AC_SY679_.jpg"
+  },
+  {
+    "title": "Fight Club",
+    "year": 1999,
+    "genre": ["Drama"],
+    "director": "David Fincher",
+    "cast": [
+      "Brad Pitt",
+      "Edward Norton",
+      "Helena Bonham Carter",
+      "Meat Loaf"
+    ],
+    "rating": 8.8,
+    "image": "https://m.media-amazon.com/images/I/81D+KJkO9-L._AC_SY679_.jpg"
+  },
+  {
+    "title": "The Dark Knight",
+    "year": 2008,
+    "genre": ["Action", "Crime", "Drama"],
+    "director": "Christopher Nolan",
+    "cast": [
+      "Christian Bale",
+      "Heath Ledger",
+      "Aaron Eckhart",
+      "Michael Caine"
+    ],
+    "rating": 9.0,
+    "image": "https://m.media-amazon.com/images/I/51EbJjlLg9L._AC_.jpg"
+  },
+  {
+    "title": "Schindler's List",
+    "year": 1993,
+    "genre": ["Biography", "Drama", "History"],
+    "director": "Steven Spielberg",
+    "cast": [
+      "Liam Neeson",
+      "Ralph Fiennes",
+      "Ben Kingsley",
+      "Caroline Goodall"
+    ],
+    "rating": 9.0,
+    "image": "https://m.media-amazon.com/images/I/51vc+gZ-VPL._AC_.jpg"
+  }
+]

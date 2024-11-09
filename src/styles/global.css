@@ -68,10 +68,9 @@ body {
 .footer {
 }
 
-<<<<<<< HEAD
 .ul {
    display: flex;
-=======
+}
 .hero {
     margin-bottom: 24px;
 }
@@ -119,5 +118,13 @@ body {
     text-align: center;
     font-weight: 700;
     padding: 12px;
->>>>>>> 5b2b146f763d92acb8f398b4d2a8380825f9d6b0
+}
+
+.movies{
+    width: 80px;
+    
+}
+
+.movie-card{
+    background-color: #000;
 }

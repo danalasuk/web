@@ -42,7 +42,7 @@
           "Robert Duvall"
       ],
       "rating": 9.2,
-      "image": "https://m.media-amazon.com/images/I/41--c0rE5OL._AC_.jpg"
+      "image": "https://th.bing.com/th/id/OIP.gFvJC4i6RPs9neZJ3YnQuAHaLH?w=120&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"
   },
   {
       "id": 4,
@@ -57,7 +57,7 @@
           "Michael Caine"
       ],
       "rating": 9.0,
-      "image": "https://m.media-amazon.com/images/I/51P6--hIbVL._AC_.jpg"
+      "image": "https://th.bing.com/th/id/OIP.41ISsask-W2O1MrxjZID8wHaKW?w=132&h=185&c=7&r=0&o=5&dpr=1.3&pid=1.7"
   },
   {
       "id": 5,
@@ -72,7 +72,7 @@
           "Bruce Willis"
       ],
       "rating": 8.9,
-      "image": "https://m.media-amazon.com/images/I/51odI5hI8NL._AC_.jpg"
+      "image": "https://th.bing.com/th/id/OIP.sTV_Ouz6SPkQW4MbAY2n_QHaKn?w=115&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"
   },
   {
       "id": 6,
@@ -87,7 +87,7 @@
           "Caroline Goodall"
       ],
       "rating": 8.9,
-      "image": "https://m.media-amazon.com/images/I/51C0NVqBnal._AC_.jpg"
+      "image": "https://th.bing.com/th/id/OIP.Lgxk1kXEAvnEgWaX6mNbEAHaLH?w=115&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"
   },
   {
       "id": 7,
@@ -102,7 +102,7 @@
           "Tom Hardy"
       ],
       "rating": 8.8,
-      "image": "https://m.media-amazon.com/images/I/51v5ZpFyaFL._AC_.jpg"
+      "image": "https://th.bing.com/th/id/OIP.fYLXgLBnnbp3N8JCRuUIGAHaLH?w=131&h=196&c=7&r=0&o=5&dpr=1.3&pid=1.7"
   },
   {
       "id": 8,
@@ -132,11 +132,11 @@
           "Sally Field"
       ],
       "rating": 8.8,
-      "image": "https://m.media-amazon.com/images/I/41uHJ3EN9kL._AC_.jpg"
+      "image": "https://th.bing.com/th/id/OIP.SoTin_IJWjPr74_PiZq6ZwHaLH?w=122&h=183&c=7&r=0&o=5&dpr=1.3&pid=1.7"
   },
   {
       "id": 10,
-      "title": "The Lord of the Rings: The Fellowship of the Ring",
+      "title": "The Lord of the Rings: The Fellowship of the",
       "year": 2001,
       "genre": ["Adventure", "Drama", "Fantasy"],
       "director": "Peter Jackson",
@@ -162,7 +162,7 @@
           "Michael Caine"
       ],
       "rating": 8.6,
-      "image": "https://m.media-amazon.com/images/I/71h7Rfp46uL._AC_SL1500_.jpg"
+      "image": "https://th.bing.com/th/id/OIP.uiaj_IMaC7h3NoieAhcmVwHaLG?w=115&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"
   },
   {
       "id": 12,
@@ -177,6 +177,6 @@
           "Woo-sik Choi"
       ],
       "rating": 8.6,
-      "image": "https://m.media-amazon.com/images/I/81AYKo5QRML._AC_SL1500_.jpg"
+      "image": "https://th.bing.com/th/id/OIP.Zh4C8nuKlPmuV-1knXdWaAHaLH?w=115&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"
   }
 ]

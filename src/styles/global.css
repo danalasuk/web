@@ -121,6 +121,7 @@ body {
 }
 
 .card{
+    align-items: center;
     background-color: #000;
     width: 300px;
     height: 510px;
@@ -131,6 +132,7 @@ body {
 }
 
 .watchlist-button {
+    width: 270px;
     margin-top: 3px;
     display: flex;
     align-items: center;
@@ -152,6 +154,7 @@ body {
 
 
 .trailer-button {
+    width: 270px;
     margin-top: 3px;
     justify-content: center;
     display: flex;
@@ -190,3 +193,18 @@ body {
     margin-left: 300px;
 }
 
+.card{
+    margin: 10px;
+}
+
+.card-img-top{
+    height: 360px;
+}
+
+.card-title{
+    margin: 7px;
+}
+
+.rating{
+    margin: 7px;
+}

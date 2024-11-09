@@ -181,3 +181,12 @@ body {
     
 }
 
+
+.single-image-carousel .carousel-item img {
+    width: 1500px;
+    height: auto;
+    max-height: 400px;
+    object-fit: cover;
+    margin-left: 300px;
+}
+

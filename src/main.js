@@ -1,74 +1,50 @@
 (async () => {
-  const moviesList = document.getElementById("movies-list");
-  const carouselList = document.getElementById("carousel-list");
-
   const PLACEHOLDER_IMAGE = "https://eagle-sensors.com/wp-content/uploads/unavailable-image.jpg";
 
   try {
       const response = await fetch("src/backend/database.json");
       const database = await response.json();
 
-      const moviesItems = database.map(item => `
-          <li class="movies-list-item" data-title="${item.title}">
-              <img class="movies-list-item-image" src="${item.image || PLACEHOLDER_IMAGE}" alt="${item.title}" onerror="this.src='${PLACEHOLDER_IMAGE}'">
-              <h2 class="movies-list-item-title">${item.title} | ${item.year}</h2>
-          </li>
+      const singleImageCarousel = document.getElementById("single-image-carousel-inner");
+      singleImageCarousel.innerHTML = database.map((item, index) => `
+          <div class="carousel-item ${index === 0 ? "active" : ""}">
+              <img src="${item.image || PLACEHOLDER_IMAGE}" alt="${item.title}">
+          </div>
       `).join("");
 
-      moviesList.innerHTML = moviesItems;
-
-      const chunkArray = (array, chunkSize) => {
-          const result = [];
-          for (let i = 0; i < array.length; i += chunkSize) {
-              result.push(array.slice(i, i + chunkSize));
-          }
-          return result;
-      };
-
-      const carouselGroups = chunkArray(database, 6);
-
-      // Заполнение карусели
-      const carouselItems = carouselGroups.map((group, index) => `
-          <div class="carousel-item ${index === 0 ? 'active' : ''}">
+      const multiCardCarousel = document.getElementById("carousel-list");
+      const chunkedDatabase = [];
+      for (let i = 0; i < database.length; i += 6) {
+          chunkedDatabase.push(database.slice(i, i + 6));
+      }
+      multiCardCarousel.innerHTML = chunkedDatabase.map((chunk, index) => `
+          <div class="carousel-item ${index === 0 ? "active" : ""}">
               <div class="card-group">
-                  ${group.map(item => `
+                  ${chunk.map(item => `
                       <div class="card">
-                          <img src="${item.image || PLACEHOLDER_IMAGE}" class="card-img-top" alt="${item.title}" onerror="this.src='${PLACEHOLDER_IMAGE}'">
+                          <img src="${item.image || PLACEHOLDER_IMAGE}" class="card-img-top" alt="${item.title}">
                           <div class="card-body">
-                              <p class="rating">⭐ ${item.rating || 'N/A'}</p>
                               <h5 class="card-title">${item.title}</h5>
+                              <p class="rating">⭐ ${item.rating}</p>
                               <button class="watchlist-button">+Watchlist</button>
                               <button class="trailer-button">▷Trailer</button>
                           </div>
                       </div>
-                  `).join('')}
+                  `).join("")}
               </div>
           </div>
       `).join("");
 
-      carouselList.innerHTML = carouselItems;
-
-      const movieItems = document.querySelectorAll(".movies-list-item");
-      movieItems.forEach(item => {
-          item.addEventListener("click", () => {
-              const title = item.getAttribute("data-title");
-              const formattedTitle = title.replace(/\s+/g, "-").toLowerCase();
-              window.location.href = `/${formattedTitle}`;
-          });
-      });
-
-      const carouselItemsList = document.querySelectorAll(".carousel-item");
-      carouselItemsList.forEach(item => {
-          item.addEventListener("click", () => {
-              const title = item.querySelector('.card-title').textContent;
-              const formattedTitle = title.replace(/\s+/g, "-").toLowerCase();
-              window.location.href = `/${formattedTitle}`;
-          });
-      });
+      const movieList = document.getElementById("movies-list");
+      movieList.innerHTML = database.map(item => `
+          <li class="movies-list-item">
+              <img src="${item.image || PLACEHOLDER_IMAGE}" class="movies-list-item-image" alt="${item.title}">
+              <h3 class="movies-list-item-title">${item.title} (${item.year})</h3>
+              <p>⭐ ${item.rating}</p>
+          </li>
+      `).join("");
 
   } catch (error) {
       console.error("Error fetching or processing the data:", error);
-      moviesList.innerHTML = "<p>Failed to load movies list.</p>";
-      carouselList.innerHTML = "<p>Failed to load carousel items.</p>";
   }
 })();

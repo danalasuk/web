@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +7,6 @@
     <link href="./src/styles/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./src/styles/index.css">
 </head>
-
 <body>
     <header class="header">
         <a href="/" class="header-logo">| DANALASUK |</a>
@@ -18,14 +16,30 @@
             <li class="header-list-item"><a href="/serials">Serials</a></li>
         </ul>
         <a href="profile" class="header-profile-picture">
-            <img src="https://static.vecteezy.com/system/resources/previews/003/715/527/non_2x/picture-profile-icon-male-icon-human-or-people-sign-and-symbol-vector.jpg" alt="">
+            <img src="https://static.vecteezy.com/system/resources/previews/003/715/527/non_2x/picture-profile-icon-male-icon-human-or-people-sign-and-symbol-vector.jpg" alt="Profile">
         </a>
     </header>
 
     <main class="main">
+
         <section class="hero">
             <img src="https://i1.wp.com/www.zekagraphic.com/wp-content/uploads/2021/03/10-Best-Movie-Poster-Design-Cover.jpg?fit=1920%2C1080&ssl=1" alt="Hero">
         </section>
+        <section class="single-image-carousel">
+          <div id="singleImageCarousel" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner" id="single-image-carousel-inner">
+
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#singleImageCarousel" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#singleImageCarousel" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+              </button>
+          </div>
+      </section>
 
         <section class="movies-container">
             <ul id="movies-list" class="movies-list"></ul>
@@ -34,6 +48,7 @@
         <section class="carousel-section">
             <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner" id="carousel-list">
+
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -53,5 +68,4 @@
     <script src="./src/bootstrap.bundle.min.js"></script>
     <script src="./src/main.js"></script>
 </body>
-
 </html>

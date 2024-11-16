@@ -8,7 +8,7 @@
       const singleImageCarousel = document.getElementById("single-image-carousel-inner");
       singleImageCarousel.innerHTML = database.map((item, index) => `
           <div class="carousel-item ${index === 0 ? "active" : ""}">
-              <img src="${item.image || PLACEHOLDER_IMAGE}" alt="${item.title}">
+              <img src="${item.image || PLACEHOLDER_IMAGE}" class="card-img-top" alt="${item.title}">
           </div>
       `).join("");
 

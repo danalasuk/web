@@ -11,12 +11,12 @@ body {
     height: 100vh;
 }
 
-.header {
+/*.header {
     padding: 12px 24px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
+}*/
 
 .header-profile-picture {
     width: 36px;
@@ -245,3 +245,28 @@ body {
   .btn-register:hover {
     background-color: #45a049; 
   }
+.Open-Watchlist{
+    background-color: #2b2b2b; 
+    border: none; 
+    color: white; 
+    padding: 12px 20px; 
+    text-align: center; 
+    text-decoration: none; 
+    display: inline-block; 
+    font-size: 16px; 
+    border-radius: 8px; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
+  }
+.Open-Watchlist:hover {
+  background-color: #45a049; 
+}
+
+.Form-Search {
+ 
+}
+
+.d-flex{
+    
+}
+

@@ -9,7 +9,42 @@
 </head>
 <body>
     <header class="header">
-        <a href="/" class="header-logo">| DANALASUK |</a>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">IMDB</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <ul class="navbar-nav ">
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Menu
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Movies</a></li>
+                    <li><a class="dropdown-item" href="#">Cartoons</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled" aria-disabled="true"></a>
+                </li>
+              </ul>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                  <input class="form-control me-2 input-lg" style="width: 100%;"  type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+
+
+                <button class="Open-Watchlist">+Watchlist</button>
+                <div class="lore">
+                    <button id="login-button" class="btn-login">Вхід</button>
+                </div>
+              </div>
+            </div>
+          </nav>
+        <!--<<a href="/" class="header-logo">| DANALASUK |</a>
         <ul class="header-list">
             <li class="header-list-item"><a href="/movies">Movies</a></li>
             <li class="header-list-item"><a href="/cartoons">Cartoons</a></li>
@@ -19,7 +54,7 @@
         <button id="login-button" class="btn-login">Вхід</button>
         <button id="register-button" class="btn-register">Реєстрація</button>
     </div>
-       <!--<a href="profile" class="header-profile-picture">
+       <a href="profile" class="header-profile-picture">
             <img src="https://static.vecteezy.com/system/resources/previews/003/715/527/non_2x/picture-profile-icon-male-icon-human-or-people-sign-and-symbol-vector.jpg" alt="Profile">
         </a>-->
     </header> 

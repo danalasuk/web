@@ -68,9 +68,9 @@
 })();
 
 document.getElementById('login-button').addEventListener('click', () => {
-    window.location.href = '/src/login/login.html'; 
+    window.location.href = '/login.html'; 
 }); 
 
 document.getElementById('register-button').addEventListener('click', () => {
-    window.location.href = '/src/registry/registry.html';
+    window.location.href = '/registry.html';
 });

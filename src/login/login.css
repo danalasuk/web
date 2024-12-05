@@ -1,6 +1,7 @@
+/* Общие стили для body */
 body {
-    font-family: Arial, sans-serif;
-    background: #f4f4f9;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #e8eff1;
     margin: 0;
     padding: 0;
     display: flex;
@@ -9,62 +10,108 @@ body {
     height: 100vh;
 }
 
+/* Контейнер для формы */
 .container {
-    background: #fff;
-    padding: 30px;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    width: 300px;
-    text-align: center;
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    width: 360px;
+    transition: transform 0.3s ease-in-out;
 }
 
+/* Эффект на контейнере при наведении */
+.container:hover {
+    transform: scale(1.05); /* Легкое увеличение при наведении */
+}
+
+/* Заголовок формы */
 h1 {
-    margin-bottom: 20px;
+    margin-bottom: 25px;
     color: #333;
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
 }
 
-.form-group {
-    margin-bottom: 15px;
-    text-align: left;
-}
-
-label {
-    font-size: 14px;
-    color: #555;
-}
-
+/* Общие стили для полей ввода */
 input {
     width: 100%;
-    padding: 10px;
+    padding: 12px;
     border: 1px solid #ccc;
-    border-radius: 5px;
-    margin-top: 5px;
+    border-radius: 8px;
+    margin-top: 8px;
+    font-size: 16px;
+    color: #333;
+    background-color: #f8f8f8;
+    transition: border 0.3s ease-in-out;
 }
 
-.btn {
+/* Изменения при фокусе на поле ввода */
+input:focus {
+    border-color: #007BFF;
+    outline: none;
+    background-color: #ffffff;
+}
+
+/* Стили для кнопок */
+button {
     background: #007BFF;
-    color: #fff;
+    color: #ffffff;
     border: none;
-    padding: 10px;
-    border-radius: 5px;
+    padding: 12px;
+    border-radius: 8px;
     cursor: pointer;
     width: 100%;
+    font-size: 16px;
+    font-weight: 600;
+    transition: background-color 0.3s ease-in-out;
 }
 
-.btn:hover {
-    background: #0056b3;
+button:hover {
+    background-color: #0056b3;
 }
 
+/* Стили для текста и ссылок */
 p {
-    margin-top: 15px;
+    margin-top: 20px;
     font-size: 14px;
+    color: #777;
 }
 
 a {
     color: #007BFF;
     text-decoration: none;
+    font-weight: 600;
 }
 
 a:hover {
     text-decoration: underline;
+}
+
+/* Стили для формы регистрации и логина */
+form {
+    margin-bottom: 20px;
+}
+
+/* Отступы для форм */
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+/* Адаптивность для мобильных устройств */
+@media (max-width: 480px) {
+    .container {
+        width: 90%;
+        padding: 25px;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+
+    input, button {
+        font-size: 14px;
+    }
 }

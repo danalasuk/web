@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Film Details</title>
+    <link rel="stylesheet" href="/src/film/film.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Заголовок с названием фильма -->
+        <div class="header">
+            <div class="title-section">
+                <h1 id="movie-title">Название фильма</h1> <!-- Здесь подставится заголовок фильма -->
+                <h2 class="subtitle" id="movie-original-title">Original title: The Shawshank Redemption (1994)</h2>
+            </div>
+        </div>
+
+        <!-- Основной блок информации о фильме -->
+        <div class="movie-info">
+            <!-- Блок с постером и трейлером -->
+            <div class="poster">
+                <img src="images/placeholder.jpg" id="movie-image" alt="Постер фильма"> <!-- Постер фильма -->
+                <iframe 
+                    id="movie-trailer" 
+                    class="trailer"
+                    src="" 
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+            </div>
+
+            <!-- Блок с деталями о фильме -->
+            <div class="details">
+                <div class="title" id="movie-year">Год: 1994</div> <!-- Год фильма -->
+                <div class="subtitle" id="movie-director">Режиссёр: Frank Darabont</div> <!-- Режиссёр -->
+                <div class="tags" id="movie-genres">
+                    <!-- Теги жанров (добавляются через JS) -->
+                </div>
+                <div class="cast" id="movie-cast">
+                    <!-- Актёры (добавляются через JS) -->
+                </div>
+                <div class="rating">
+                    <span id="movie-rating">9.3/10</span> <!-- Рейтинг -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Подключение JS -->
+    <script src="/src/js/film.js"></script>
+</body>
+</html>

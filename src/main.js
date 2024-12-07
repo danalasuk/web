@@ -61,7 +61,14 @@
               <p>⭐ ${item.rating}</p>
           </li>
       `).join("");
-
+      movieList.addEventListener("click", (event) => {
+        const movieItem = event.target.closest(".movies-list-item");
+        if (movieItem) {
+            const movieId = movieItem.getAttribute("data-id");
+            window.location.href = `/film.html?id=${movieId}`;
+        }
+    });
+      
   } catch (error) {
       console.error("Error fetching or processing the data:", error);
   }

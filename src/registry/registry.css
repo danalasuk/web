@@ -1,61 +1,66 @@
-
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: #e8eff1;
+    background: #1b093b; /* Темный фон */
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    color: #fff;
 }
 
 .container {
-    align-items: center;
-    background: #ffffff;
+    background: #4d2b99; /* Фиолетовый фон */
     padding: 40px;
-    border-radius: 12px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
     width: 360px;
+    text-align: center;
     transition: transform 0.3s ease-in-out;
 }
 
 .container:hover {
-    transform: scale(1.05); 
+    transform: scale(1.05);
 }
 
-/* Заголовок формы */
 h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+p {
+    font-size: 16px;
     margin-bottom: 25px;
-    color: #333;
-    font-size: 30px;
-    font-weight: 600;
-    text-transform: uppercase;
+    color: #e4d9ff; /* Светлый оттенок текста */
 }
 
 input {
-    width: 100%;
+    width: 335px;
     padding: 12px;
-    border: 1px solid #ccc;
+    border: 1px solid #8566c8;
     border-radius: 8px;
-    margin-top: 8px;
+    margin-top: 15px;
     font-size: 16px;
-    color: #333;
-    background-color: #f8f8f8;
+    color: #fff;
+    background-color: #3c1a73;
     transition: border 0.3s ease-in-out;
 }
 
-
-input:focus {
-    border-color: #007BFF;
-    outline: none;
-    background-color: #ffffff;
+input::placeholder {
+    color: #b399e6;
 }
 
+input:focus {
+    border-color: #a785f9;
+    outline: none;
+    background-color: #543290;
+}
 
 button {
-    margin-top: 10px;
-    background: #007BFF;
+    margin-top: 20px;
+    background: linear-gradient(90deg, #e066ff, #a855f7);
     color: #ffffff;
     border: none;
     padding: 12px;
@@ -64,37 +69,29 @@ button {
     width: 100%;
     font-size: 16px;
     font-weight: 600;
-    transition: background-color 0.3s ease-in-out;
+    transition: background 0.3s ease-in-out;
 }
 
 button:hover {
-    background-color: #0056b3;
-}
-
-
-p {
-    margin-top: 20px;
-    font-size: 14px;
-    color: #777;
+    background: linear-gradient(90deg, #a855f7, #e066ff);
 }
 
 a {
-    color: #007BFF;
+    color: #b399e6;
     text-decoration: none;
-    font-weight: 600;
+    font-size: 14px;
+    margin-top: 15px;
+    display: inline-block;
 }
 
 a:hover {
     text-decoration: underline;
 }
 
-form {
-    margin-bottom: 20px;
-}
-
 .form-group {
     margin-bottom: 20px;
     text-align: left;
+    color: #e4d9ff; /* Цвет текста для меток */
 }
 
 @media (max-width: 480px) {
@@ -104,7 +101,7 @@ form {
     }
 
     h1 {
-        font-size: 26px;
+        font-size: 24px;
     }
 
     input, button {

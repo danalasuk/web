@@ -11,7 +11,7 @@ body {
 }
 
 .container {
-    background: #4d2b99; /* Фиолетовый фон */
+    background: #371F6B; 
     padding: 40px;
     border-radius: 16px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
@@ -33,7 +33,7 @@ h1 {
 p {
     font-size: 16px;
     margin-bottom: 25px;
-    color: #e4d9ff; /* Светлый оттенок текста */
+    color: #fff; 
 }
 
 input {
@@ -44,12 +44,12 @@ input {
     margin-top: 15px;
     font-size: 16px;
     color: #fff;
-    background-color: #3c1a73;
+    background: linear-gradient(90deg, #e066ff, #a855f7);
     transition: border 0.3s ease-in-out;
 }
 
 input::placeholder {
-    color: #b399e6;
+    color: #fff;
 }
 
 input:focus {
@@ -70,6 +70,7 @@ button {
     font-size: 16px;
     font-weight: 600;
     transition: background 0.3s ease-in-out;
+    box-shadow: black;
 }
 
 button:hover {
@@ -107,4 +108,9 @@ a:hover {
     input, button {
         font-size: 14px;
     }
+}
+
+.flige2{
+    width: 100px;
+    height: 100px;
 }

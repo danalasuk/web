@@ -53,21 +53,23 @@
       }
   });
 
-      const movieList = document.getElementById("movies-list");
-      movieList.innerHTML = database.map(item => `
-          <li class="movies-list-item">
-              <img src="${item.image || PLACEHOLDER_IMAGE}" class="movies-list-item-image" alt="${item.title}">
-              <h3 class="movies-list-item-title">${item.title} (${item.year})</h3>
-              <p>⭐ ${item.rating}</p>
-          </li>
-      `).join("");
-      movieList.addEventListener("click", (event) => {
-        const movieItem = event.target.closest(".movies-list-item");
-        if (movieItem) {
-            const movieId = movieItem.getAttribute("data-id");
-            window.location.href = `/film.html?id=${movieId}`;
-        }
-    });
+  const movieList = document.getElementById("movies-list");
+  movieList.innerHTML = database.map(item => `
+      <li class="movies-list-item" data-id="${item.id}">
+          <img src="${item.image || PLACEHOLDER_IMAGE}" class="movies-list-item-image" alt="${item.title}">
+          <h3 class="movies-list-item-title">${item.title} (${item.year})</h3>
+          <p>⭐ ${item.rating}</p>
+      </li>
+  `).join("");
+  
+  movieList.addEventListener("click", (event) => {
+      const movieItem = event.target.closest(".movies-list-item");
+      if (movieItem) {
+          const movieId = movieItem.getAttribute("data-id");
+          window.location.href = `/film.html?id=${movieId}`;
+      }
+  });
+  
       
   } catch (error) {
       console.error("Error fetching or processing the data:", error);

@@ -1,70 +1,125 @@
-body {
-    font-family: Arial, sans-serif;
+
+* {
     margin: 0;
-    background-color: #1c1c1c;
-    color: #fff;
+    padding: 0;
+    box-sizing: border-box;
 }
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1c0b2b; 
+    color: #e3dff8; 
+    line-height: 1.6;
+    margin: 0;
     padding: 20px;
 }
+
+#app {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #2d1b43; 
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Заголовок */
 .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    text-align: center;
     margin-bottom: 20px;
 }
+
+.title-section h1 {
+    font-size: 2.5rem;
+    color: #a56cc1; 
+}
+
+.title-section .subtitle {
+    font-size: 1.2rem;
+    color: #c4a3e8; 
+    margin-top: 10px;
+}
+
+
 .movie-info {
     display: flex;
+    flex-wrap: wrap;
     gap: 20px;
 }
-.poster img {
-    width: 300px;
-    border-radius: 10px;
-}
-.details {
-    flex: 1;
-}
-.title {
-    font-size: 36px;
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-.subtitle {
-    font-size: 18px;
-    color: #aaa;
-    margin-bottom: 20px;
-}
-.tags {
+
+.poster {
+    flex: 1 1 40%;
     display: flex;
-    gap: 10px;
-    margin-bottom: 20px;
-}
-.tag {
-    background: #333;
-    padding: 5px 10px;
-    border-radius: 5px;
-    font-size: 14px;
-}
-.rating {
-    display: flex;
+    flex-direction: column;
     align-items: center;
-    gap: 10px;
+    gap: 15px;
 }
-.rating span {
-    font-size: 24px;
-    color: #f5c518;
+
+.poster img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
 }
-.rating small {
-    color: #aaa;
+
+.trailer {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+    border: 2px solid #a56cc1; 
 }
-.gallery {
-    margin-top: 20px;
+
+
+.details {
+    flex: 1 1 55%;
     display: flex;
-    gap: 10px;
+    flex-direction: column;
+    gap: 15px;
+    font-size: 1rem;
 }
-.gallery img {
-    width: 100px;
+
+.details .title,
+.details .subtitle {
+    font-size: 1.2rem;
+    color: #e3dff8; 
+}
+
+.tags, .cast, .rating {
+    margin-top: 10px;
+}
+
+.tags .tag {
+    display: inline-block;
+    background-color: #a56cc1;
+    color: #ffffff;
+    padding: 5px 10px;
+    margin: 5px 5px 0 0;
     border-radius: 5px;
+    font-size: 0.9rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.cast .actor {
+    margin-top: 5px;
+    color: #c4a3e8;
+}
+
+.rating {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #e3dff8; 
+    text-shadow: 0 0 5px #a56cc1; 
+}
+
+
+@media (max-width: 768px) {
+    .movie-info {
+        flex-direction: column;
+    }
+
+    .poster,
+    .details {
+        flex: 1 1 100%;
+    }
 }
